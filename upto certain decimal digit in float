@@ -1,0 +1,14 @@
+#include<iostream>
+#include<iomanip>
+//<iomanip> is the compulsory header file to work for setprecision().
+using namespace std;
+
+int main()
+{
+    double d=6.5675;
+    cout<<setprecision(2)<<fixed<<d;
+    //If we remove the 'fixed' in above line then the 2 will
+    //count from 6 and with the 'fixed' part it counts from 
+    //after decimal point that is till 5.56.
+    return 0;
+}
